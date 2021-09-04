@@ -18,4 +18,6 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-microApp.start();
+microApp.start({
+  shadowDOM: true, // 默认值false
+});
