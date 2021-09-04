@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
+    "serve:micro": "VUE_CLI_SERVICE_CONFIG_PATH='vue.micro.config.js' vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },

@@ -27,7 +27,7 @@ export default function HomePage() {
         <Route path='/home/child-react'>
           <micro-app
             name='childReact'
-            url='http://localhost:3001'
+            url='http://localhost:3001/'
             baseurl='/home/child-react'
             shadowDOM='false'
             data={{ name: 'derek' }} // data只接受对象类型，采用严格对比(===)，当传入新的data对象时会重新发送
@@ -44,7 +44,7 @@ export default function HomePage() {
           </button>
           <micro-app
             name='childVue'
-            url='http://localhost:4001'
+            url='http://localhost:4001/'
             baseurl='/home/child-vue'
             shadowDOM='false'
           ></micro-app>
