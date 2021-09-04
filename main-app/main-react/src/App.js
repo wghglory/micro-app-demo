@@ -19,8 +19,8 @@ function App() {
           </ul>
         </nav>
         <Switch>
-          <Route path='/home' exact={true} component={HomePage}></Route>
-          <Route path='/about' exact={true} component={AboutPage}></Route>
+          <Route path='/home' component={HomePage}></Route>
+          <Route path='/about' component={AboutPage}></Route>
           <Redirect path='*' to='/home'></Redirect>
         </Switch>
       </main>

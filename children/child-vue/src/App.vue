@@ -3,8 +3,26 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view/>
+  <div v-if="microAppMode">返回data数据 {{ message }}</div>
+  <router-view />
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'HelloWorld',
+  props: {
+    msg: String,
+  },
+  data() {
+    return {
+      message: window.microApp?.getData(),
+      microAppMode: window.__MICRO_APP_ENVIRONMENT__,
+    };
+  },
+});
+</script>
 
 <style>
 #app {
